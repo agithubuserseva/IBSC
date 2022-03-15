@@ -1,0 +1,208 @@
+True
+1
+@0 Update(data=0, dataid=0, dsid=0, rid=0)
+@1 Use(data=1, dataid=0, dsid=0)
+need to add more rules
+1
+start minimizing
+<class 'type_constructor.DBUser'>
+need to increase domain
+2
+@0 DBUser(dsid=0, role=0)
+@0 Update(data=0, dataid=0, dsid=0, rid=0)
+@2 Use(data=1, dataid=0, dsid=0)
+need to add more rules
+2
+start minimizing
+<class 'type_constructor.AssignGroup_BD'>
+need to increase domain
+3
+@0 DBUser(dsid=0, role=0)
+@0 Update(data=1, dataid=0, dsid=0, rid=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@2 Use(data=0, dataid=0, dsid=0)
+need to add more rules
+3
+@0 DBUser(dsid=0, role=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@2 Collect(data=0, dataid=1, dsid=0)
+@3 Use(data=1, dataid=1, dsid=0)
+need to add more rules
+3
+@0 DBUser(dsid=0, role=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@2 Collect(data=0, dataid=1, dsid=0)
+@3 Use(data=1, dataid=1, dsid=0)
+need to add more rules
+3
+start minimizing
+current domain 1
+<class 'type_constructor.Register_Patient'>
+need to increase domain
+4
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=0, hid=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@2 Collect(data=0, dataid=1, dsid=0)
+@3 Use(data=1, dataid=1, dsid=0)
+need to add more rules
+4
+start minimizing
+current domain 1
+<class 'type_constructor.AssignGroup_Patient'>
+need to increase domain
+5
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=0, hid=0)
+@0 AssignGroup_Patient(user=0, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@2 Collect(data=1, dataid=1, dsid=0)
+@3 Use(data=0, dataid=1, dsid=0)
+need to add more rules
+5
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=1, hid=0)
+@0 AssignGroup_Patient(user=1, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@2 Collect(data=0, dataid=1, dsid=1)
+@3 Use(data=1, dataid=1, dsid=0)
+need to add more rules
+5
+@0 DBUser(dsid=0, role=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@2 Register_Patient(dsid=1, hid=0)
+@2 Collect(data=2, dataid=1, dsid=1)
+@2 AssignGroup_Patient(user=1, group=2, processor=0)
+@3 Use(data=3, dataid=1, dsid=0)
+need to add more rules
+5
+start minimizing
+current domain 1
+<class 'type_constructor.Collect'>
+need to increase domain
+6
+start minimizing
+current domain 1
+<class 'type_constructor.Collect'>
+need to increase domain
+7
+start minimizing
+current domain 1
+<class 'type_constructor.Register_Patient'>
+need to increase domain
+8
+start minimizing
+current domain 1
+<class 'type_constructor.Deactivate'>
+need to increase domain
+9
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=2, hid=0)
+@0 AssignGroup_Patient(user=2, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@2 Collect(data=3, dataid=0, dsid=2)
+@3 Update(data=0, dataid=0, dsid=0, rid=0)
+@3 Deactivate(dsid=2)
+@4 Use(data=1, dataid=0, dsid=0)
+need to add more rules
+9
+start minimizing
+current domain 1
+<class 'type_constructor.Deactivate'>
+need to increase domain
+10
+start minimizing
+current domain 1
+<class 'type_constructor.Deactivate'>
+need to increase domain
+11
+start minimizing
+current domain 1
+<class 'type_constructor.Deactivate'>
+need to increase domain
+12
+start minimizing
+current domain 1
+<class 'type_constructor.Leave'>
+need to increase domain
+13
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=1, hid=0)
+@0 AssignGroup_Patient(user=1, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@1 Collect(data=3, dataid=2, dsid=1)
+@2 Update(data=3, dataid=2, dsid=0, rid=0)
+@3 Use(data=4, dataid=2, dsid=0)
+@47 Leave(dsid=1)
+need to add more rules
+13
+start minimizing
+current domain 1
+<class 'type_constructor.Inform'>
+need to increase domain
+14
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=2, hid=0)
+@0 Inform(dsid=2)
+@0 Collect(data=3, dataid=2, dsid=2)
+@0 AssignGroup_Patient(user=2, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@1 Update(data=5, dataid=2, dsid=0, rid=0)
+@2 Use(data=4, dataid=2, dsid=0)
+@48 Deactivate(dsid=2)
+@96 Leave(dsid=2)
+need to add more rules
+14
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=2, hid=0)
+@0 Inform(dsid=2)
+@0 Collect(data=3, dataid=2, dsid=2)
+@0 AssignGroup_Patient(user=2, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@1 Update(data=5, dataid=2, dsid=0, rid=0)
+@46 Leave(dsid=2)
+@48 Use(data=2, dataid=2, dsid=0)
+need to add more rules
+14
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=2, hid=0)
+@0 Inform(dsid=2)
+@0 AssignGroup_Patient(user=2, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@45 Collect(data=5, dataid=2, dsid=2)
+@46 Leave(dsid=2)
+@46 Use(data=2, dataid=2, dsid=0)
+need to add more rules
+14
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=2, hid=0)
+@0 Inform(dsid=2)
+@0 AssignGroup_Patient(user=2, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@46 Collect(data=2, dataid=2, dsid=2)
+@47 Collect(data=3, dataid=2, dsid=2)
+@48 Leave(dsid=2)
+@48 Use(data=2, dataid=2, dsid=0)
+need to add more rules
+14
+start minimizing
+current domain 1
+<class 'type_constructor.Collect'>
+need to increase domain
+15
+start minimizing
+current domain 1
+<class 'type_constructor.Update'>
+need to increase domain
+16
+start minimizing
+current domain 4
+<class 'type_constructor.Collect'>
+<class 'type_constructor.AssignGroup_Patient'>
+<class 'type_constructor.Var'>
+<class 'type_constructor.Collect'>
+need to increase domain
+17
+domain size 22
+unsat
+1.501338005065918

@@ -1,0 +1,329 @@
+False
+1
+@0 Deletion_Request(dataid=0, dsid=0, rid=0)
+@0 Collect(data=0, dataid=0, dsid=0)
+need to add more rules
+1
+@0 Collect(data=0, dataid=0, dsid=0)
+@1 Deletion_Request(dataid=0, dsid=0, rid=0)
+need to add more rules
+1
+@0 Collect(data=0, dataid=0, dsid=0)
+@2 Deletion_Request(dataid=0, dsid=0, rid=0)
+need to add more rules
+1
+start minimizing
+current domain 3
+<class 'type_constructor.DBUser'>
+<class 'type_constructor.AssignGroup_BD'>
+<class 'type_constructor.Var'>
+need to increase domain
+2
+@0 DBUser(dsid=0, role=0)
+@0 Collect(data=0, dataid=0, dsid=0)
+@0 AssignGroup_BD(user=0, group=2, processor=0)
+@0 Var(v=0)
+@2 Deletion_Request(dataid=0, dsid=0, rid=0)
+need to add more rules
+2
+start minimizing
+current domain 1
+<class 'type_constructor.DBUser'>
+need to increase domain
+3
+@0 DBUser(dsid=0, role=0)
+@0 Collect(data=0, dataid=0, dsid=0)
+@0 Var(v=0)
+@1 DBUser(dsid=0, role=3)
+@1 AssignGroup_BD(user=0, group=2, processor=0)
+@2 Deletion_Request(dataid=0, dsid=0, rid=0)
+need to add more rules
+3
+start minimizing
+current domain 1
+<class 'type_constructor.DBUser'>
+need to increase domain
+4
+start minimizing
+current domain 1
+<class 'type_constructor.AssignGroup_BD'>
+need to increase domain
+5
+@0 Collect(data=0, dataid=0, dsid=0)
+@0 Var(v=1)
+@1 DBUser(dsid=1, role=0)
+@1 AssignGroup_BD(user=1, group=0, processor=1)
+@2 DBUser(dsid=1, role=3)
+@2 Deletion_Request(dataid=0, dsid=0, rid=0)
+@2 AssignGroup_BD(user=1, group=2, processor=1)
+need to add more rules
+5
+@0 Collect(data=0, dataid=0, dsid=0)
+@0 Var(v=1)
+@1 DBUser(dsid=2, role=0)
+@1 AssignGroup_BD(user=2, group=0, processor=2)
+@2 DBUser(dsid=1, role=3)
+@2 Deletion_Request(dataid=0, dsid=0, rid=0)
+@2 AssignGroup_BD(user=1, group=2, processor=2)
+need to add more rules
+5
+@0 DBUser(dsid=0, role=0)
+@0 Collect(data=0, dataid=0, dsid=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=1)
+@1 DBUser(dsid=1, role=3)
+@1 AssignGroup_BD(user=1, group=2, processor=0)
+@2 Deletion_Request(dataid=0, dsid=0, rid=0)
+need to add more rules
+5
+start minimizing
+current domain 2
+<class 'type_constructor.Deactivate'>
+<class 'type_constructor.Deactivate'>
+need to increase domain
+6
+@0 DBUser(dsid=0, role=0)
+@0 Collect(data=0, dataid=0, dsid=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=1)
+@1 DBUser(dsid=1, role=3)
+@1 AssignGroup_BD(user=1, group=2, processor=0)
+@2 Deletion_Request(dataid=0, dsid=0, rid=0)
+@961 Deactivate(dsid=1)
+need to add more rules
+6
+start minimizing
+current domain 1
+<class 'type_constructor.Register_Patient'>
+need to increase domain
+7
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=1, hid=0)
+@0 Collect(data=0, dataid=0, dsid=1)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@1 DBUser(dsid=2, role=3)
+@1 AssignGroup_BD(user=2, group=2, processor=0)
+@2 Deletion_Request(dataid=0, dsid=1, rid=0)
+@961 Deactivate(dsid=2)
+need to add more rules
+7
+start minimizing
+current domain 1
+<class 'type_constructor.AssignGroup_Patient'>
+need to increase domain
+8
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=1, hid=0)
+@0 Collect(data=0, dataid=0, dsid=1)
+@0 AssignGroup_Patient(user=1, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@1 DBUser(dsid=2, role=3)
+@1 AssignGroup_BD(user=2, group=2, processor=0)
+@2 Deletion_Request(dataid=0, dsid=1, rid=0)
+@961 Deactivate(dsid=2)
+need to add more rules
+8
+start minimizing
+current domain 1
+<class 'type_constructor.Delete'>
+need to increase domain
+9
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=1, hid=0)
+@0 Collect(data=0, dataid=0, dsid=1)
+@0 AssignGroup_Patient(user=1, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@1 DBUser(dsid=2, role=3)
+@1 AssignGroup_BD(user=2, group=2, processor=0)
+@2 Deletion_Request(dataid=0, dsid=1, rid=0)
+@722 Delete(dataid=0, dsid=0, rid=0)
+@960 Deactivate(dsid=2)
+need to add more rules
+9
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=1, hid=0)
+@0 Collect(data=0, dataid=0, dsid=1)
+@0 AssignGroup_Patient(user=1, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@1 DBUser(dsid=2, role=3)
+@1 AssignGroup_BD(user=2, group=2, processor=0)
+@2 Deletion_Request(dataid=0, dsid=1, rid=0)
+@722 Delete(dataid=0, dsid=2, rid=0)
+@960 Deactivate(dsid=2)
+need to add more rules
+9
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=1, hid=0)
+@0 Collect(data=0, dataid=0, dsid=1)
+@0 AssignGroup_Patient(user=1, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@1 DBUser(dsid=2, role=3)
+@1 AssignGroup_BD(user=2, group=2, processor=0)
+@2 Deletion_Request(dataid=0, dsid=1, rid=0)
+@722 Delete(dataid=0, dsid=2, rid=0)
+@960 Deactivate(dsid=2)
+need to add more rules
+9
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=1, hid=0)
+@0 Collect(data=0, dataid=0, dsid=1)
+@0 AssignGroup_Patient(user=1, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@1 DBUser(dsid=2, role=3)
+@1 AssignGroup_BD(user=2, group=2, processor=0)
+@2 Deletion_Request(dataid=0, dsid=1, rid=0)
+@722 Delete(dataid=0, dsid=2, rid=-1)
+@960 Deactivate(dsid=2)
+need to add more rules
+9
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=1, hid=0)
+@0 Collect(data=0, dataid=0, dsid=1)
+@0 AssignGroup_Patient(user=1, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@1 DBUser(dsid=2, role=3)
+@1 AssignGroup_BD(user=2, group=2, processor=0)
+@2 Deletion_Request(dataid=0, dsid=1, rid=0)
+@722 Delete(dataid=0, dsid=2, rid=-1)
+@960 Deactivate(dsid=2)
+need to add more rules
+9
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=1, hid=0)
+@0 Collect(data=0, dataid=0, dsid=1)
+@0 AssignGroup_Patient(user=1, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@1 DBUser(dsid=2, role=3)
+@1 AssignGroup_BD(user=2, group=2, processor=0)
+@2 Deletion_Request(dataid=0, dsid=1, rid=0)
+@722 Delete(dataid=0, dsid=2, rid=-1)
+@960 Deactivate(dsid=2)
+need to add more rules
+9
+@0 DBUser(dsid=0, role=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@1 DBUser(dsid=2, role=3)
+@1 AssignGroup_BD(user=2, group=2, processor=0)
+@191 Register_Patient(dsid=1, hid=0)
+@191 AssignGroup_Patient(user=1, group=2, processor=0)
+@238 Collect(data=0, dataid=0, dsid=1)
+@240 Deletion_Request(dataid=0, dsid=1, rid=0)
+@286 Deactivate(dsid=1)
+@960 Delete(dataid=0, dsid=2, rid=-1)
+@961 Deactivate(dsid=2)
+need to add more rules
+9
+start minimizing
+current domain 1
+<class 'type_constructor.Deactivate'>
+need to increase domain
+10
+start minimizing
+current domain 1
+<class 'type_constructor.Collect'>
+need to increase domain
+11
+start minimizing
+current domain 1
+<class 'type_constructor.Deactivate'>
+need to increase domain
+12
+start minimizing
+current domain 1
+<class 'type_constructor.Leave'>
+need to increase domain
+13
+@0 DBUser(dsid=0, role=0)
+@0 Register_Patient(dsid=1, hid=0)
+@0 AssignGroup_Patient(user=1, group=2, processor=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@1 DBUser(dsid=2, role=3)
+@1 Collect(data=1, dataid=1, dsid=1)
+@1 AssignGroup_BD(user=2, group=2, processor=0)
+@3 Deletion_Request(dataid=1, dsid=1, rid=0)
+@48 Leave(dsid=1)
+@723 Delete(dataid=1, dsid=2, rid=-1)
+@724 Deactivate(dsid=2)
+need to add more rules
+13
+start minimizing
+current domain 1
+<class 'type_constructor.Inform'>
+need to increase domain
+14
+@0 DBUser(dsid=0, role=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@1 DBUser(dsid=2, role=3)
+@1 AssignGroup_BD(user=2, group=2, processor=0)
+@191 Register_Patient(dsid=1, hid=0)
+@191 Inform(dsid=1)
+@191 AssignGroup_Patient(user=1, group=2, processor=0)
+@238 Collect(data=1, dataid=1, dsid=1)
+@240 Deletion_Request(dataid=1, dsid=1, rid=0)
+@285 Leave(dsid=1)
+@960 Delete(dataid=1, dsid=2, rid=-1)
+@961 Deactivate(dsid=2)
+need to add more rules
+14
+@0 DBUser(dsid=0, role=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@1 DBUser(dsid=2, role=3)
+@1 AssignGroup_BD(user=2, group=2, processor=0)
+@191 Register_Patient(dsid=1, hid=0)
+@191 Inform(dsid=1)
+@191 AssignGroup_Patient(user=1, group=2, processor=0)
+@238 Collect(data=1, dataid=1, dsid=1)
+@240 Deletion_Request(dataid=1, dsid=1, rid=0)
+@285 Leave(dsid=1)
+@960 Delete(dataid=1, dsid=2, rid=-1)
+@961 Deactivate(dsid=2)
+need to add more rules
+14
+start minimizing
+current domain 1
+<class 'type_constructor.Consent'>
+need to increase domain
+15
+@0 DBUser(dsid=0, role=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@1 DBUser(dsid=2, role=3)
+@1 AssignGroup_BD(user=2, group=2, processor=0)
+@237 Register_Patient(dsid=1, hid=0)
+@237 Consent(dsid=1)
+@237 Inform(dsid=1)
+@237 AssignGroup_Patient(user=1, group=2, processor=0)
+@238 Collect(data=1, dataid=1, dsid=1)
+@240 Deletion_Request(dataid=1, dsid=1, rid=0)
+@285 Leave(dsid=1)
+@960 Delete(dataid=1, dsid=2, rid=-1)
+@961 Deactivate(dsid=2)
+find trace
+@0 DBUser(dsid=0, role=0)
+@0 AssignGroup_BD(user=0, group=0, processor=0)
+@0 Var(v=2)
+@237 Register_Patient(dsid=1, hid=0)
+@237 Consent(dsid=1)
+@237 Inform(dsid=1)
+@237 AssignGroup_Patient(user=1, group=2, processor=0)
+@238 Collect(data=1, dataid=1, dsid=1)
+@284 DBUser(dsid=2, role=3)
+@284 AssignGroup_BD(user=2, group=2, processor=0)
+@285 Leave(dsid=1)
+@286 Deletion_Request(dataid=1, dsid=1, rid=0)
+@1006 Delete(dataid=1, dsid=2, rid=-1)
+@1244 Deactivate(dsid=2)
+vol: 14
+2.37953782081604
