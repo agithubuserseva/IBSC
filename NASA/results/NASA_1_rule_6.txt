@@ -1,5 +1,0 @@
-False
-1
-domain size 13
-unsat
-0.03400778770446777

@@ -9,6 +9,9 @@ def run_exp(command_hear):
     with open(config_template_file, 'r') as template_f:
         config_tempalte = template_f.read()
 
+    if not os.path.exists('results'):
+        os.makedirs('results')
+
     timeout = 5000
     #init value
     rule_file  = "verification_rules.py"

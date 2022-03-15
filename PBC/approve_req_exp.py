@@ -9,6 +9,9 @@ def run_exp(command_header):
     with open("approve_req_rule_template.txt", 'r') as rule_template:
         rule_conetent = rule_template.read()
 
+    if not os.path.exists('results'):
+        os.makedirs('results')
+
     timeout = 5000
     init_values = (1, 2, 4)
     #init value

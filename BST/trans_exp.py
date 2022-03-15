@@ -4,6 +4,10 @@ import os
 import subprocess
 
 def run_exp(command_header):
+
+    if not os.path.exists('results'):
+        os.makedirs('results')
+
     with open(os.path.join(os.getcwd(), "trans_domain_template.txt"), 'r') as domain_template:
         domain_content = domain_template.read()
 

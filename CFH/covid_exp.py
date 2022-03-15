@@ -1,9 +1,12 @@
 config_template_file = "covid_config.txt"
 
 import subprocess
-
+import os
 
 def run_exp(command_header):
+    if not os.path.exists('results'):
+        os.makedirs('results')
+
     config_tempalte = ""
     with open(config_template_file, 'r') as template_f:
         config_tempalte = template_f.read()

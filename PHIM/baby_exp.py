@@ -1,5 +1,5 @@
 
-
+import os
 import subprocess
 
 def run_exp(command_header):
@@ -9,9 +9,12 @@ def run_exp(command_header):
     with open("baby_rule_template.txt", 'r') as rule_template:
         rule_conetent = rule_template.read()
 
-    timeout = 100
+    timeout = 50000
     init_values = (1, 2, 4)
     #init value
+
+    if not os.path.exists('results'):
+        os.makedirs('results')
 
     time = 5000
     sid = 2
