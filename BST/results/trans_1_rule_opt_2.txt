@@ -1,0 +1,14 @@
+thresh: 50
+True
+1
+@0 Trans(cid=0, tid=0, amount=51)
+@0 Report(tid=0)
+find trace
+@0 Trans(cid=0, tid=0, amount=51)
+@0 Report(tid=0)
+vol: 2
+current domain 2
+solution is opt
+0.06282949447631836
+0.23 user, 0.02 system, 0.30 elapsed -- Max VSize = 135668KB, Max RSS = 62572KB
+Exit [0]

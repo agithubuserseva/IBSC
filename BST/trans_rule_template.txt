@@ -94,5 +94,5 @@ if __name__ == '__main__':
 
     rules = set()
     start = time.time()
-    check_property_refining(rule_{i}, rules, complete_rules, ACTION, state_action, True, min_solution=mymin, final_min_solution=True)
+    check_property_refining(rule_{i}, rules, complete_rules, ACTION, state_action, True, min_solution=mymin, final_min_solution=True, vol_bound = {vol_bound})
     print(time.time() - start)

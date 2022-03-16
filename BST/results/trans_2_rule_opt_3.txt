@@ -1,0 +1,65 @@
+thresh: 500
+True
+1
+@0 Trans(cid=0, tid=2, amount=0)
+@0 Report(tid=2)
+@31 Trans(cid=0, tid=0, amount=0)
+need to add more rules
+1
+@0 Trans(cid=0, tid=2, amount=1)
+@0 Report(tid=2)
+@31 Trans(cid=0, tid=0, amount=1)
+need to add more rules
+1
+@0 Authorize(eid=0, tid=1, cid=0)
+@2 Trans(cid=0, tid=1, amount=501)
+@2 Report(tid=1)
+@33 Trans(cid=0, tid=0, amount=500)
+need to add more rules
+1
+start minimizing
+current domain 1
+<class 'type_constructor.Trans'>
+need to increase domain
+2
+start minimizing
+current domain 1
+<class 'type_constructor.Trans'>
+need to increase domain
+3
+@0 Trans(cid=1, tid=0, amount=498)
+@1 Trans(cid=1, tid=2, amount=497)
+@5 Trans(cid=1, tid=0, amount=499)
+@5 Report(tid=0)
+@31 Trans(cid=1, tid=1, amount=500)
+need to add more rules
+3
+start minimizing
+current domain 1
+<class 'type_constructor.Trans'>
+need to increase domain
+4
+@2 Trans(cid=1, tid=3, amount=498)
+@3 Trans(cid=1, tid=2, amount=497)
+@4 Trans(cid=1, tid=1, amount=500)
+@9 Report(tid=1)
+@35 Trans(cid=1, tid=4, amount=499)
+need to add more rules
+4
+@2 Trans(cid=1, tid=0, amount=497)
+@3 Trans(cid=1, tid=1, amount=498)
+@4 Trans(cid=1, tid=2, amount=500)
+@9 Report(tid=2)
+@35 Trans(cid=1, tid=3, amount=499)
+find trace
+@2 Trans(cid=1, tid=0, amount=497)
+@3 Trans(cid=1, tid=1, amount=498)
+@4 Trans(cid=1, tid=2, amount=500)
+@9 Report(tid=2)
+@35 Trans(cid=1, tid=3, amount=499)
+vol: 5
+current domain 5
+solution is opt
+1.2892816066741943
+1.47 user, 0.02 system, 1.50 elapsed -- Max VSize = 142868KB, Max RSS = 70316KB
+Exit [0]

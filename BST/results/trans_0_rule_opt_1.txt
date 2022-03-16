@@ -1,0 +1,12 @@
+thresh: 5
+True
+1
+@0 Authorize(eid=0, tid=0, cid=0)
+@2 Trans(cid=0, tid=0, amount=6)
+need to add more rules
+1
+domain size 3
+unsat
+0.06042075157165527
+0.22 user, 0.02 system, 0.30 elapsed -- Max VSize = 135832KB, Max RSS = 63140KB
+Exit [0]

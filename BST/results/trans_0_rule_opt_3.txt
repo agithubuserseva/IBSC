@@ -1,0 +1,8 @@
+thresh: 5
+True
+1
+domain size 7
+unsat
+0.03132009506225586
+0.19 user, 0.02 system, 0.30 elapsed -- Max VSize = 133364KB, Max RSS = 57444KB
+Exit [0]

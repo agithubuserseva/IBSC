@@ -1,0 +1,12 @@
+thresh: 50
+False
+1
+@0 Trans(cid=0, tid=0, amount=51)
+@0 Report(tid=0)
+find trace
+@0 Trans(cid=0, tid=0, amount=51)
+@0 Report(tid=0)
+vol: 2
+0.05853438377380371
+0.22 user, 0.02 system, 0.30 elapsed -- Max VSize = 135668KB, Max RSS = 62852KB
+Exit [0]

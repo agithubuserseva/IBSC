@@ -1,0 +1,56 @@
+thresh: 10000
+True
+1
+@0 Authorize(eid=0, tid=0, cid=0)
+@2 Trans(cid=0, tid=0, amount=10001)
+need to add more rules
+1
+start minimizing
+current domain 4
+<class 'type_constructor.Trans'>
+<class 'type_constructor.Trans'>
+<class 'type_constructor.Trans'>
+<class 'type_constructor.Trans'>
+need to increase domain
+2
+@0 Trans(cid=0, tid=3, amount=10000)
+@0 Report(tid=2)
+@1 Trans(cid=0, tid=4, amount=10000)
+@7 Authorize(eid=0, tid=2, cid=0)
+@9 Trans(cid=0, tid=2, amount=10001)
+@10 Trans(cid=0, tid=0, amount=10000)
+@11 Trans(cid=0, tid=1, amount=10000)
+need to add more rules
+2
+@0 Trans(cid=0, tid=4, amount=10000)
+@6 Authorize(eid=0, tid=2, cid=0)
+@8 Trans(cid=0, tid=2, amount=10001)
+@9 Trans(cid=0, tid=0, amount=9998)
+@10 Trans(cid=0, tid=3, amount=9999)
+@11 Trans(cid=0, tid=1, amount=10000)
+need to add more rules
+2
+start minimizing
+current domain 1
+<class 'type_constructor.Trans'>
+need to increase domain
+3
+@1 Trans(cid=0, tid=0, amount=9999)
+@2 Trans(cid=0, tid=1, amount=10000)
+@3 Trans(cid=0, tid=2, amount=9997)
+@4 Trans(cid=0, tid=3, amount=10000)
+@5 Trans(cid=0, tid=4, amount=10000)
+@11 Authorize(eid=0, tid=5, cid=0)
+@13 Trans(cid=0, tid=5, amount=10001)
+need to add more rules
+3
+start minimizing
+current domain 1
+<class 'type_constructor.Report'>
+need to increase domain
+4
+domain size 9
+unsat
+0.5402920246124268
+0.73 user, 0.01 system, 0.80 elapsed -- Max VSize = 140724KB, Max RSS = 68388KB
+Exit [0]
