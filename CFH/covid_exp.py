@@ -29,7 +29,7 @@ def run_exp(command_header):
             print(result_file)
             with open(result_file, 'w') as f:
                 try:
-                    result = subprocess.run(command_header + [ rule_file, str(j)], stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                    result = subprocess.run(command_header + [ rule_file, str(j), str(vol_bound)], stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True,
                                             timeout=timeout)
                 except subprocess.TimeoutExpired as t:
@@ -43,7 +43,7 @@ def run_exp(command_header):
             print(result_file)
             with open(result_file, 'w') as f:
                 try:
-                    result = subprocess.run(command_header + [ rule_file, str(j), "min"], stdout=subprocess.PIPE,
+                    result = subprocess.run(command_header + [ rule_file, str(j), str(vol_bound), "min"], stdout=subprocess.PIPE,
                                             stderr=subprocess.PIPE,
                                             universal_newlines=True,
                                             timeout=timeout)
@@ -68,7 +68,7 @@ def run_exp(command_header):
         print(result_file)
         with open(result_file, 'w') as f:
             try:
-                result = subprocess.run(command_header + [ rule_file, str(j)], stdout=subprocess.PIPE,
+                result = subprocess.run(command_header + [ rule_file, str(j), "10000"], stdout=subprocess.PIPE,
                                         stderr=subprocess.PIPE,
                                         universal_newlines=True,
                                         timeout=timeout)
@@ -83,7 +83,7 @@ def run_exp(command_header):
         print(result_file)
         with open(result_file, 'w') as f:
             try:
-                result = subprocess.run(command_header + [ rule_file, str(j), "min"], stdout=subprocess.PIPE,
+                result = subprocess.run(command_header + [ rule_file, str(j), "10000", "min"], stdout=subprocess.PIPE,
                                         stderr=subprocess.PIPE,
                                         universal_newlines=True,
                                         timeout=timeout)

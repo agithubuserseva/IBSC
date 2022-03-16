@@ -22,6 +22,7 @@ def run_exp(command_header):
     tid = 4
     amount = 10
     time = 4
+    bound = 10
     for i in range(3):
         outfile = "trans_domain_{}.py".format(i)
         rule_file = "trans_req_rule_{}.py".format(i)
@@ -30,7 +31,7 @@ def run_exp(command_header):
         for j in range(1, 4):
             with open(rule_file, 'w') as rule_f:
                 rule_f.write(
-                    rule_conetent.format(domain_file=outfile[:-3], i=j))
+                    rule_conetent.format(domain_file=outfile[:-3], i=j, vol_bound=bound))
 
             result_file = "results/trans_{}_rule_{}.txt".format(i, j)
             print(result_file)
@@ -49,7 +50,7 @@ def run_exp(command_header):
 
             with open(rule_file, 'w') as rule_f:
                 rule_f.write(
-                    rule_conetent.format(domain_file=outfile[:-3], i=j))
+                    rule_conetent.format(domain_file=outfile[:-3], i=j, vol_bound=bound))
 
             result_file = "results/trans_{}_rule_opt_{}.txt".format(i, j)
             print(result_file)
@@ -70,6 +71,7 @@ def run_exp(command_header):
         cid = cid * 10
         tid = tid * 10
         amount = amount * 10
+        bound = bound * 10
         time = time * 10
 
     outfile = "trans_domain_unbound.py"
@@ -79,7 +81,7 @@ def run_exp(command_header):
     for j in range(1, 4):
         with open(rule_file, 'w') as rule_f:
             rule_f.write(
-                rule_conetent.format(domain_file=outfile[:-3], i=j))
+                rule_conetent.format(domain_file=outfile[:-3], i=j, vol_bound=10000))
 
         result_file = "results/trans_unbound_rule_{}.txt".format(j)
         print(result_file)
@@ -98,7 +100,7 @@ def run_exp(command_header):
 
         with open(rule_file, 'w') as rule_f:
             rule_f.write(
-                rule_conetent.format(domain_file=outfile[:-3], i=j))
+                rule_conetent.format(domain_file=outfile[:-3], i=j, vol_bound=10000))
 
         result_file = "results/trans_unbound_rule_opt_{}.txt".format(j)
         print(result_file)

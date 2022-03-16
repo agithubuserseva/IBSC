@@ -1,3 +1,3 @@
-b_data = 5
-b_dataid = 5
-b_dsid = 2
+b_data = None
+b_dataid = None
+b_dsid = None

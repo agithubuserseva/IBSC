@@ -89,10 +89,16 @@ if __name__ == '__main__':
     args = sys.argv[1:]
     target_rule = globals()["rule_{}".format(args[0])]
 
-    if len(args) >= 2 and args[1] == "min":
+
+    assert len(args) >= 2
+    bound = int(args[1])
+
+    if len(args) >= 3 and args[2] == "min":
         min = True
     else:
         min = False
+
+
 
     print(min)
     #volume_bound = int(args[1])
@@ -104,5 +110,5 @@ if __name__ == '__main__':
     complete_rules = delete_rules + group_rules + registration_rules + data_collection_rules + update_rules + use_rules + consented_rules
     rules = set()
     start = time.time()
-    check_property_refining(target_rule, rules, complete_rules , ACTION, state_action, True, min_solution=min, final_min_solution=True, vol_bound=1000)
+    check_property_refining(target_rule, rules, complete_rules , ACTION, state_action, True, min_solution=min, final_min_solution=True, vol_bound=bound)
     print(time.time() - start)

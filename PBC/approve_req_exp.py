@@ -1,5 +1,5 @@
 
-
+import os
 import subprocess
 
 def run_exp(command_header):
@@ -18,6 +18,7 @@ def run_exp(command_header):
     id = 1
     data = 2
     time = 4
+    bound = 10
     for i in range(3):
         outfile = "approve_req_domain_{}.py".format(i)
         rule_file = "approve_req_rule_{}.py".format(i)
@@ -26,7 +27,7 @@ def run_exp(command_header):
 
         with open(rule_file, 'w') as rule_f:
             rule_f.write(
-                rule_conetent.format(domain_file=outfile[:-3],))
+                rule_conetent.format(domain_file=outfile[:-3], vol_bound = bound))
 
         result_file = "results/approve_req_{}.txt".format(i)
         print(result_file)
@@ -60,6 +61,7 @@ def run_exp(command_header):
         id = id * 10
         data = data *10
         time = time * 10
+        bound = bound * 10
 
     outfile = "approve_req_domain_unbound.py".format(i)
     rule_file = "approve_req_rule_unbound.py".format(i)
@@ -68,7 +70,7 @@ def run_exp(command_header):
 
     with open(rule_file, 'w') as rule_f:
         rule_f.write(
-            rule_conetent.format(domain_file=outfile[:-3], ))
+            rule_conetent.format(domain_file=outfile[:-3], vol_bound = 10000 ))
 
     result_file = "results/approve_req_unbound.txt"
     print(result_file)
