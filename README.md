@@ -1,5 +1,5 @@
 # IBSC
-# This is the anonymous repo for FSE 2022 submission "Early Verification of Legal Compliance via Bounded Satisfiability Checking"
+# This is the anonymous repo for TACAS 2022 submission "Early Verification of Legal Compliance via Bounded Satisfiability Checking"
 
 ### prerequisite:
 1. Python 3.5 and later
