@@ -309,11 +309,15 @@ def check_property_refining(property, rules, complete_rules, ACTION, state_actio
                     vol = print_trace(model, ACTION, state_action)
                     print("vol: {}".format(str(vol)))
 
-                    if min_solution:
+                    if min_solution or (out_of_bound_warning and vol > vol_bound):
                         s.pop()
                         model = get_temp_act_constraint_minimize(s, rules, force_no_duplicate=True, addition_actions=get_all_actions(ACTION), round=application_rounds, disable_minimization=disable_minimization)
                         new_vol = print_trace(model, ACTION, state_action, should_print=False)
+                        if new_vol > vol_bound:
+                            print("bounded UNSAT")
+                            return
                         if new_vol >= vol:
+                            print("opt size is {}".format(vol))
                             print("solution is opt")
                             return
                         else:
