@@ -5,7 +5,7 @@
 1. Python 3.5 and later
 
 2. memtime for measuring time and memory usage: https://github.com/phuseman/memtime 
-(only available on Linux OS)
+(only available on Linux OS). Please add memtime executable to the path.
 
 3. z3-solver with python binding:
     `pip install z3-solver`
