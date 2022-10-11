@@ -114,7 +114,11 @@ def symmetry_sub(formula):
 
 
 
-from collections import Iterable
+try:
+    from collections.abc import Iterable
+except ImportError:
+    from collections import Iterable
+
 class illFormedFormulaException(Exception):
     pass
 
