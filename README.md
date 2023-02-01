@@ -14,7 +14,6 @@
     `pip install pysmt`
     
 
-
 ### repo Structure
 
 
