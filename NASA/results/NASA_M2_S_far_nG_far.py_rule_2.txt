@@ -1,0 +1,22 @@
+False
+1
+@0 g_a_1_CP(communication_counter=0)
+@0 g_a_1(intent_trj_near_atc=0, intent_trj_far_atc=0, intent_trj_future_atc=0, fault_apply_future=False, fault_apply_far=False, fault_apply_near=False, fault_communications_atc_par=True, fault_communications_atc_tot=False, fault_communications_adsb=False, intent_trj_near=0, intent_trj_far=0, intent_trj_future=0, current_trj=0, X_intent_trj_near=0, X_intent_trj_far=0, X_intent_trj_future=0, X_current_trj=0, count_f_comm_atc=0, allowed_f_comm_atc=False, init_trj=0, sugg_trj_near=-1, sugg_trj_far=-1, sugg_trj_future=-1)
+@0 g_a_2(init_trj=4)
+@0 g_a_3(init_trj=5)
+@0 s_a_1_CDR(sugg_trj_future=0, internal_failure=False, fault_future_resolve=False, fault_resolve_detection=False, intent_trj_future_g_1=-1, intent_trj_future_g_2=-1, intent_trj_future_g_3=-1, intent_trj_future_s_1=0, intent_trj_future_s_2=-1)
+@0 s_a_1_CP(communication_counter=0)
+@0 s_a_1(next_intent_trj_future=0, intent_trj_near_adsb=0, intent_trj_far_adsb=0, intent_trj_future_adsb=0, intent_trj_near_atc=0, intent_trj_far_atc=0, intent_trj_future_atc=0, request_GTM=False, fault_apply_near=False, fault_apply_far=False, fault_apply_future=False, fault_communications_atc_par=True, fault_communications_atc_tot=False, fault_communications_adsb=False, intent_trj_near=0, intent_trj_far=0, intent_trj_future=0, current_trj=0, X_intent_trj_near=0, X_intent_trj_far=0, X_intent_trj_future=0, X_current_trj=0, count_f_comm_atc=0, allowed_f_comm_atc=False, init_trj=1, init_trj_g1=0, init_trj_g2=4, init_trj_g3=5, intent_trj_future_s_1=0, intent_trj_future_s_2=-1, intent_trj_future_g_1_adsb=-1, intent_trj_future_g_2_adsb=-1, intent_trj_future_g_3_adsb=-1, sugg_trj_near=-1, sugg_trj_far=-1, sugg_trj_future=-1)
+@0 s_a_2_CDR(sugg_trj_future=0, internal_failure=False, fault_future_resolve=False, fault_resolve_detection=False, intent_trj_future_g_1=-1, intent_trj_future_g_2=-1, intent_trj_future_g_3=-1, intent_trj_future_s_1=0, intent_trj_future_s_2=-1)
+@0 s_a_2_CP(communication_counter=0)
+@0 s_a_2(next_intent_trj_future=0, intent_trj_near_adsb=0, intent_trj_far_adsb=0, intent_trj_future_adsb=0, intent_trj_near_atc=0, intent_trj_far_atc=0, intent_trj_future_atc=0, request_GTM=False, fault_apply_near=False, fault_apply_far=False, fault_apply_future=False, fault_communications_atc_par=True, fault_communications_atc_tot=False, fault_communications_adsb=False, intent_trj_near=0, intent_trj_far=0, intent_trj_future=0, current_trj=0, X_intent_trj_near=0, X_intent_trj_far=0, X_intent_trj_future=0, X_current_trj=0, count_f_comm_atc=0, allowed_f_comm_atc=False, init_trj=2, init_trj_g1=0, init_trj_g2=4, init_trj_g3=5, intent_trj_future_s_1=0, intent_trj_future_s_2=-1, intent_trj_future_g_1_adsb=-1, intent_trj_future_g_2_adsb=-1, intent_trj_future_g_3_adsb=-1, sugg_trj_near=-1, sugg_trj_far=-1, sugg_trj_future=-1)
+@0 s_a_3(init_trj=3)
+@0 atc_CP(communication_counter=0)
+@0 atc(sugg_g_ac1_near=0, sugg_g_ac1_far=0, sugg_g_ac1_future=0, sugg_g_ac2_near=0, sugg_g_ac2_far=0, sugg_g_ac2_future=0, sugg_s_ac1_near=0, sugg_s_ac1_far=0, sugg_s_ac1_future=0, sugg_s_ac2_near=0, sugg_s_ac2_far=0, sugg_s_ac2_future=0, atc_near_resolution_failure=False, atc_far_resolution_failure=False, atc_future_resolution_failure=False, init_g_ac1=0, init_g_ac2=4, init_g_ac3=5, init_s_ac1=1, init_s_ac2=2, init_s_ac3=3, intent_g_ac1_near=0, intent_g_ac1_far=0, intent_g_ac1_future=0, intent_g_ac2_near=4, intent_g_ac2_far=4, intent_g_ac2_future=4, intent_g_ac3_near=5, intent_g_ac3_far=5, intent_g_ac3_future=5, intent_s_ac1_near=0, intent_s_ac1_far=0, intent_s_ac1_future=0, intent_s_ac2_near=0, intent_s_ac2_far=0, intent_s_ac2_future=0, intent_s_ac3_near=3, intent_s_ac3_far=3, intent_s_ac3_future=3, s_ac1_rec_request_GTM=False, s_ac2_rec_request_GTM=False, s_ac3_rec_request_GTM=False, fault_communication_g_ac1=True, fault_communication_g_ac2=False, fault_communication_g_ac3=False, fault_communication_s_ac1=True, fault_communication_s_ac2=True, fault_communication_s_ac3=False)
+@0 comm_net(intent_s_ac1_near=0, intent_s_ac1_far=0, intent_s_ac1_future=0, intent_s_ac2_near=0, intent_s_ac2_far=0, intent_s_ac2_future=0, intent_s_ac3_near=3, intent_s_ac3_far=3, intent_s_ac3_future=-1, intent_g_ac1_future=-1, intent_g_ac2_future=-1, intent_g_ac3_future=-1)
+@0 Model()
+need to add more rules
+1
+domain size 15
+unsat
+0.15303564071655273

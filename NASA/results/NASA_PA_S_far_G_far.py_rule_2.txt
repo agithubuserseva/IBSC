@@ -1,0 +1,21 @@
+False
+Traceback (most recent call last):
+  File "D:\IBSC\NASA\verification_rules.py", line 227, in <module>
+    check_property_refining(target_rule, t_rules, rules, ACTION, state_action, True, disable_minimization=False, min_solution=mymin, final_min_solution=True)
+  File "D:\IBSC\NASA\../Analyzer\analyzer.py", line 256, in check_property_refining
+    prop = encode(property, include_new_act=True)
+  File "D:\IBSC\NASA\../Analyzer\logic_operator.py", line 143, in encode
+    res = formula.encode(assumption=assumption, include_new_act=include_new_act, exception=exception, disable=disable)
+  File "D:\IBSC\NASA\../Analyzer\logic_operator.py", line 909, in encode
+    base_constraint = encode(AND(self.func.evaulate(action, assumption=assumption), action.presence),
+  File "D:\IBSC\NASA\../Analyzer\logic_operator.py", line 492, in evaulate
+    cache = self.procedure(input)
+  File "D:\IBSC\NASA\../Analyzer\logic_operator.py", line 1051, in <lambda>
+    circuit = exist(Action_class, lambda act: AND(func(act), act >= current_time))
+  File "D:\IBSC\NASA\verification_rules.py", line 203, in <lambda>
+    rule_2 = eventually(Model, lambda g: NOT(H_1_b(g)))
+  File "D:\IBSC\NASA\verification_rules.py", line 186, in H_1_b
+    return NOT(OR(LOS_near(g), LOS_far(g), LOS_future(g)))
+  File "D:\IBSC\NASA\verification_rules.py", line 14, in <lambda>
+    LOS_near = lambda g: NOT(ALL_DIFFERENT([g.g_a_1.intent_trj_near, g.g_a_2.intent_trj_near, g.g_a_3.intent_trj_near,
+AttributeError: 'Model' object has no attribute 'g_a_1'

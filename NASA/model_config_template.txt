@@ -1,5 +1,7 @@
+import sys
 from pysmt.typing import INT, BOOL
 from pysmt.shortcuts import Equals, NotEquals, Int
+sys.path.append('config')
 from {config_file} import *
 
 import sys

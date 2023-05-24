@@ -1,0 +1,17 @@
+False
+Traceback (most recent call last):
+  File "D:\IBSC\NASA\verification_rules.py", line 227, in <module>
+    check_property_refining(target_rule, t_rules, rules, ACTION, state_action, True, disable_minimization=False, min_solution=mymin, final_min_solution=True)
+  File "D:\IBSC\NASA\../Analyzer\analyzer.py", line 256, in check_property_refining
+    prop = encode(property, include_new_act=True)
+  File "D:\IBSC\NASA\../Analyzer\logic_operator.py", line 143, in encode
+    res = formula.encode(assumption=assumption, include_new_act=include_new_act, exception=exception, disable=disable)
+  File "D:\IBSC\NASA\../Analyzer\logic_operator.py", line 909, in encode
+    base_constraint = encode(AND(self.func.evaulate(action, assumption=assumption), action.presence),
+  File "D:\IBSC\NASA\../Analyzer\logic_operator.py", line 492, in evaulate
+    cache = self.procedure(input)
+  File "D:\IBSC\NASA\../Analyzer\logic_operator.py", line 1051, in <lambda>
+    circuit = exist(Action_class, lambda act: AND(func(act), act >= current_time))
+  File "D:\IBSC\NASA\verification_rules.py", line 207, in <lambda>
+    rule_6 = eventually(Model, lambda g: NOT(H_4(g)))
+NameError: name 'H_4' is not defined. Did you mean: 'H_1'?

@@ -1,6 +1,8 @@
+import sys
 from pysmt.typing import INT, BOOL
 from pysmt.shortcuts import Equals, NotEquals, Int
-from config2 import *
+sys.path.append('config')
+from __pycache__ import *
 
 import sys
 sys.path.append('../Analyzer')

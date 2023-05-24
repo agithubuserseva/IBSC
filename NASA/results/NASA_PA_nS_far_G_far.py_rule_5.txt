@@ -1,0 +1,5 @@
+False
+1
+domain size 20
+unsat
+0.047010183334350586

@@ -164,7 +164,7 @@ if ENABLE_PURE_AIRSPACE:
     for t in types:
         for i in index:
             atc_inputs.append(lambda g, t=t, i=i: getattr(getattr(g, "{}_a_{}".format(t, i)),
-                                                                   "fault_communications_atc.format"))
+                                                                   "fault_communications_atc"))
 
     sub_action_list.append(("atc", atc, atc_inputs))
 

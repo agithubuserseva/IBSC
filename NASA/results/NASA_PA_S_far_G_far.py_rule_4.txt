@@ -1,0 +1,21 @@
+False
+Traceback (most recent call last):
+  File "D:\IBSC\NASA\verification_rules.py", line 227, in <module>
+    check_property_refining(target_rule, t_rules, rules, ACTION, state_action, True, disable_minimization=False, min_solution=mymin, final_min_solution=True)
+  File "D:\IBSC\NASA\../Analyzer\analyzer.py", line 256, in check_property_refining
+    prop = encode(property, include_new_act=True)
+  File "D:\IBSC\NASA\../Analyzer\logic_operator.py", line 143, in encode
+    res = formula.encode(assumption=assumption, include_new_act=include_new_act, exception=exception, disable=disable)
+  File "D:\IBSC\NASA\../Analyzer\logic_operator.py", line 314, in encode
+    return encode(invert(self.arg), assumption=assumption, include_new_act=include_new_act, exception=exception, disable=disable)
+  File "D:\IBSC\NASA\../Analyzer\logic_operator.py", line 143, in encode
+    res = formula.encode(assumption=assumption, include_new_act=include_new_act, exception=exception, disable=disable)
+  File "D:\IBSC\NASA\../Analyzer\logic_operator.py", line 909, in encode
+    base_constraint = encode(AND(self.func.evaulate(action, assumption=assumption), action.presence),
+  File "D:\IBSC\NASA\../Analyzer\logic_operator.py", line 492, in evaulate
+    cache = self.procedure(input)
+  File "D:\IBSC\NASA\verification_rules.py", line 189, in <lambda>
+    return forall(Model, lambda g: Implication(LOS(g), previous(g, lambda g1: D_LOS(g1))))
+  File "D:\IBSC\NASA\verification_rules.py", line 11, in <lambda>
+    LOS = lambda g: NOT(ALL_DIFFERENT([g.g_a_1.current_trj, g.g_a_2.current_trj, g.g_a_3.current_trj,
+AttributeError: 'Model' object has no attribute 'g_a_1'
