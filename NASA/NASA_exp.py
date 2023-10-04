@@ -4,7 +4,7 @@ import os
 import subprocess
 
 def run_exp(command_hear):
-    config_template_file = "model_config_template.txt"
+    config_template_file = "model_config_template_compare.txt"
     config_tempalte = ""
     with open(config_template_file, 'r') as template_f:
         config_tempalte = template_f.read()
