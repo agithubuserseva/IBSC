@@ -21,7 +21,7 @@ def run_exp(command_hear):
             out_f.write(config_tempalte.format(config_file="config{}".format(str(i))))
 
         for j in range(1, 7):
-            result_file = "results/NASA_{}_rule_opt.txt".format(i, j)
+            result_file = "results/NASA_{}_rule_{}_opt.txt".format(i, j)
             print(result_file)
             with open(result_file, 'w') as f:
                 try:
@@ -64,7 +64,7 @@ def run_exp(command_hear):
             #     f.write(result.stdout)
             #     f.write(result.stderr)
 
-            result_file = "results/NASA_{}_rule.txt".format(i, j)
+            result_file = "results/NASA_{}_rule_{}.txt".format(i, j)
             print(result_file)
             with open(result_file, 'w') as f:
                 try:
