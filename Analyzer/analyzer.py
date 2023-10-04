@@ -117,16 +117,19 @@ def check_trace(model, complete_rules, rules, stop_at_first = True):
         if rule in rules:
             continue
         else:
-            solver.push()
+            # solver.push()
             constraint = encode(rule, include_new_act=False, disable=True)
             solver.add_assertion(constraint)
             solver.add_assertion(And(get_temp_act_constraints(checking=True)))
             solved = solver.solve()
-            solver.pop()
+            # solver.pop()
             if not solved:
                 result.add(rule)
                 if stop_at_first:
                     return result
+            else:
+                # there might be newly enforeced assignment, and make them explicit
+                continue
     return result
 
 def check_property_expanding(property, rules, ACTION, state_action):
