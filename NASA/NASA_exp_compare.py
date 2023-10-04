@@ -25,7 +25,7 @@ def run_exp(command_hear):
             print(result_file)
             with open(result_file, 'w') as f:
                 try:
-                    result = subprocess.run(command_hear +  [ rule_file, str(j)], stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                    result = subprocess.run(command_hear +  [ rule_file, str(j), "t"], stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True,
                                             timeout=timeout)
                 except subprocess.TimeoutExpired as t:
@@ -64,11 +64,11 @@ def run_exp(command_hear):
             #     f.write(result.stdout)
             #     f.write(result.stderr)
 
-            result_file = "results/NASA_{}_rule_opt_{}_bcr.txt".format(i, j)
+            result_file = "results/NASA_{}_rule.txt".format(i, j)
             print(result_file)
             with open(result_file, 'w') as f:
                 try:
-                    result = subprocess.run(command_hear + [rule_file, str(j), "t", "f", "t"], stdout=subprocess.PIPE,
+                    result = subprocess.run(command_hear + [rule_file, str(j), "f"], stdout=subprocess.PIPE,
                                             stderr=subprocess.PIPE,
                                             universal_newlines=True,
                                             timeout=timeout)
@@ -97,5 +97,5 @@ def run_exp(command_hear):
             #     f.write(result.stderr)
 
 if __name__ == "__main__":
-    command_header = ["../../../memtime/memtime", "python3"]
+    command_header = ["../../memtime/memtime", "python3"]
     run_exp(command_header)
