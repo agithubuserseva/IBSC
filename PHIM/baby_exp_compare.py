@@ -67,6 +67,7 @@ def run_exp(command_header):
     #     pid = pid * 10
     #     vol_bound = vol_bound * 10
 
+    vol_bound = 1000
     outfile = "baby_domain_unbounded.py"
     rule_file = "baby_rule_unbounded.py"
     with open(outfile, 'w') as out_f:
